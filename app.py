@@ -3,7 +3,7 @@ import json
 
 app = Flask(__name__)
 
-with open("memes.json") as f:
+with open("memes.json", encoding="utf-8") as f:
     memes = json.load(f)
 
 @app.route("/")
